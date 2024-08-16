@@ -9,15 +9,19 @@
   <body>
     <div class="box-login">
       <div class="titre"><h1>Login</h1></div>
-      <div class="input-user"><input type="text" placeholder="Username" /></div>
-      <div class="input-pass">
-        <input type="password" placeholder="Password" />
-      </div>
-      <div class="tool-box">
-        <span><input type="checkbox" /> <a href="">Remember me</a></span>
-        <span><a href="">Forgot Password ?</a></span>
-      </div>
-      <div class="button-box"><button>Login</button></div>
+      <form action="/login" method="POST">
+        <div class="input-user">
+          <input type="text" placeholder="Username" name="username" required />
+        </div>
+        <div class="input-pass">
+          <input type="password" placeholder="Password" name="password" required />
+        </div>
+        <div class="tool-box">
+          <span><input type="checkbox" /> <a href="">Remember me</a></span>
+          <span><a href="">Forgot Password ?</a></span>
+        </div>
+        <div class="button-box"><button type="submit">Login</button></div>
+      </form>
       <div class="register-box">
         <p>Don't have an account? <a href="">Register</a></p>
       </div>
